@@ -15,7 +15,7 @@ def scrape_article(url):
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else ""
 
-    # published_at extraction
+    # Mencari tanggal publish
     published_at = ""
     time_tag = soup.find("time")
     if time_tag and time_tag.has_attr("datetime"):

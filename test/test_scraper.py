@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from core.scraper import scrape_article
 
 url = "https://ekonomi.bisnis.com/read/20251116/10/1929201/pembangunan-kopdes-merah-putih-dari-apbn-purbaya-bakal-cicil-rp240-triliun-ke-himbara"
